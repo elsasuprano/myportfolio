@@ -2,14 +2,19 @@
   margin: 0;
   padding: 0;
 }
+:root {
+    --color-primary: navajowhite; 
+    --color-bg-primary: floralwhite; 
+    --color-secondary: blueviolet;
+}
 body {
-    background-color: floralwhite;
+    background-color: var(--color-bg-primary);
 }
 nav {
     display: flex;
     padding: 20px;
     justify-content: space-between;
-    background-color: navajowhite
+    background-color: var(--color-primary);
 }
 nav span{
     background: none;
@@ -34,7 +39,7 @@ ul {
     position: absolute;
     bottom: 30px;
     right: 100px;
-    background-color: navajowhite;
+    background-color: var(--color-primary);
     padding: 10px;
 }
 main section {
@@ -45,7 +50,7 @@ main section {
 main section .title {
     font-size: 40px;
     width: 25%;
-    border-right: solid 3px blueviolet;
+    border-right: solid 3px var(--color-secondary);
     text-align: right;
     padding-right: 20px;
 }
@@ -65,7 +70,7 @@ main section .content p{
 .work {
     flex: 1 0 300px;
     height: 200px;
-    background-color: lightblue; 
+    background-color: var(--color-bg-primary);
     margin: 10px;
 }
 
@@ -81,6 +86,16 @@ main section .content p{
     background-size: cover;
     min-width: 70%;
 }
+.contact-info ul {
+    display: flex;
+    width: 100%;
+    list-style-type: none; 
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+
 @media screen and (max-width: 660px) {
     main section {
         display: flex;
@@ -91,7 +106,7 @@ main section .content p{
         width: 94%;
         text-align: left;
         border-right: none;
-        border-bottom: solid 3px blueviolet;
+        border-bottom: solid 3px var(--color-secondary);
     }
     main section .content {
         width: 100%;
