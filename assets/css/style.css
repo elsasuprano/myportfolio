@@ -12,8 +12,9 @@ nav {
     background-color: navajowhite
 }
 nav span{
-    background: blueviolet;
-    padding: 15px;
+    background: none;
+    color: black; 
+    font-size: 30px;
 }
 ul {
     display: flex;
@@ -23,10 +24,10 @@ ul {
 }
 .jumbo {
     height: 300px;
-    background-size: contain;
-    background-position: center center;
     background-image: url("https://images.unsplash.com/photo-1499561385668-5ebdb06a79bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHBhbG0lMjB0cmVlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
-    position: relative;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cool-title {
@@ -52,6 +53,10 @@ main section .content{
     width: 70%;
 
 }
+main section .content p{
+    padding: 0px 15px 15px 0px;
+    text-align: justify;
+}
 
 .project-container {
     display: flex;
@@ -64,13 +69,26 @@ main section .content{
     margin: 10px;
 }
 
+.contact-me a {
+    padding:20px; 
+    text-align: center;
+
+}
+.no1 { 
+    background-image: url("https://images.unsplash.com/photo-1499561385668-5ebdb06a79bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHBhbG0lMjB0cmVlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 70%;
+}
 @media screen and (max-width: 660px) {
     main section {
-        flex-direction: colume;
+        display: flex;
+        flex-direction: column;
     }
 
     main section .title {
-        width: 100%
+        width: 94%;
         text-align: left;
         border-right: none;
         border-bottom: solid 3px blueviolet;
