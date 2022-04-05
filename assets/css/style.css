@@ -62,30 +62,40 @@ main section .content p{
     padding: 0px 15px 15px 0px;
     text-align: justify;
 }
-
-.project-container {
-    display: flex;
-}
-
 .work {
     flex: 1 0 300px;
     height: 200px;
     background-color: var(--color-bg-primary);
     margin: 10px;
 }
-
-.contact-me a {
-    padding:20px; 
-    text-align: center;
+.work-container {
+    display: flex;
+    flex-wrap: wrap; 
 
 }
-.no1 { 
+.project {
+    flex: 1 0 300px;
+    margin: 10px;
+    height: 200px;
+    background-color: lightblue;
+}
+
+.project.no1 { 
+    flex: 2 0 800px;
     background-image: url("https://images.unsplash.com/photo-1499561385668-5ebdb06a79bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHBhbG0lMjB0cmVlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 70%;
 }
+
+
+.contact-me a {
+    padding:20px; 
+    text-align: center;
+
+}
+
 .contact-info ul {
     display: flex;
     width: 100%;
